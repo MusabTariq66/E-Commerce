@@ -1,0 +1,9 @@
+﻿@model Product
+
+<form method="post" enctype="multipart/form-data">
+    <input type="text" placeholder="name" asp-for="Name" />
+    <input type="number" placeholder="number" asp-for="Price" />
+    <input type="file" name="img" />
+    <input type="submit" value=" Add Product" />
+
+</form>

@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Norda - Minimal eCommerce HTML Template</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/Assets1/images/favicon.png">
+
+    <!-- All CSS is here
+    ============================================ -->
+    <!--
+    <link rel="stylesheet" href="~/Assets1/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Assets1/css/vendor/signericafat.css">
+    <link rel="stylesheet" href="~/Assets1/css/vendor/cerebrisans.css">
+    <link rel="stylesheet" href="~/Assets1/css/vendor/simple-line-icons.css">
+    <link rel="stylesheet" href="~/Assets1/css/vendor/elegant.css">
+    <link rel="stylesheet" href="~/Assets1/css/vendor/linear-icon.css">
+    <link rel="stylesheet" href="~/Assets1/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="~/Assets1/css/plugins/easyzoom.css">
+    <link rel="stylesheet" href="~/Assets1/css/plugins/slick.css">
+    <link rel="stylesheet" href="~/Assets1/css/plugins/animate.css">
+    <link rel="stylesheet" href="~/Assets1/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="~/Assets1/css/plugins/jquery-ui.css">
+    <link rel="stylesheet" href="~/Assets1/css/style.css"> -->
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet" href="~/Assets1/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="~/Assets1/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="~/Assets1/css/style.min.css">
+    <link rel="stylesheet" href="~/Assets1/css/font-awesome.min.css">
+    <link href="Assets1https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Quicksand:300,400,500" rel="stylesheet">
+    <link rel="shortcut icon" href="Assets1images/favi.ico">
+    <!--== ALL CSS FILES ==-->
+    <link rel="stylesheet" href="~/Assets1/css/style.css">
+    <link rel="stylesheet" href="~/Assets1/css/mob.css">
+    <link rel="stylesheet" href="~/Assets1/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Assets1/css/materialize.css" />
+
+</head>
+<body>
+    <header class="header-area transparent-bar section-padding-1">
+        <div class="container-fluid">
+            <div class="header-large-device">
+                <div class="header-top header-top-ptb-1 border-bottom-1">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="header-offer-wrap">
+                                <p><i class="icon-paper-plane"></i> FREE SHIPPING world wide for all orders over <span>$199</span></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="header-top-right">
+                                <div class="same-style-wrap">
+                                    <div class="same-style same-style-border track-order">
+                                        <a asp-controller="Admin" asp-action="order_Tracking">Track Your Order</a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-6">
+                                        <!-- Dropdown Trigger -->
+                                        <a class='waves-effect dropdown-button top-user-pro' href='#' data-activates='top-menu'>
+                                            <img src="~/Assets1/images/user/6.png" alt="" />My Account <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </a>
+
+                                        <!-- Dropdown Structure -->
+
+                                    </div>
+                                    <div class="same-style same-style-border currency-wrap">
+                                        <a class="currency-dropdown-active" href="">US Dollar <i class="icon-arrow-down"></i></a>
+                                        <div class="currency-dropdown">
+                                            <ul>
+                                                <li><a href="Assets1#">USD</a></li>
+                                                <li><a href="Assets1#">EUR</a></li>
+                                                <li><a href="Assets1#">Real</a></li>
+                                                <li><a href="Assets1#">BDT</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="social-style-1 social-style-1-mrg">
+                                    <a href="aapke_tweet"><i class="icon-social-twitter"></i></a>
+                                    <a href="musab.tariq.758"><i class="icon-social-facebook"></i></a>
+                                    <a href="musab.tariq.758"><i class="icon-social-instagram"></i></a>
+         
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a asp-controller="Admin" asp-action="Index"><img src="~/Assets1/~/Assets1/images/logo/logo.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="main-menu main-menu-padding-1 main-menu-lh-1">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a asp-controller="Admin" asp-action="Index" >HOME </a>
+
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Admin" asp-action="Shop">SHOP </a>
+
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Admin" asp-action="Add_Pro">Add_Product </a>
+
+                                        </li>
+                               
+                                        <li>
+                                            <a href="">PAGES </a>
+                                            <ul class="sub-menu-style">
+                                                <li><a asp-controller="Admin" asp-action="About_Us">About us </a></li>
+                                                <li><a asp-controller="Admin" asp-action="Cart">Cart </a></li>
+                                                <li><a asp-controller="Admin" asp-action="Checkout">Checkout </a></li>
+                                                <li><a asp-controller="Admin" asp-action="My_Account">My Account</a></li>
+                                                <li><a asp-controller="Admin" asp-action="Wish_List">Wishlist </a></li>
+                                                <li><a asp-controller="Admin" asp-action="Compare">Compare </a></li>
+                                                <li><a asp-controller="Admin" asp-action="Contact">Contact us </a></li>
+                                                <li><a asp-controller="Admin" asp-action="order_Tracking">Order Tracking</a></li>
+                                                <li><a asp-controller="Admin" asp-action="Login">login </a></li>
+                                                <li><a asp-controller="Admin" asp-action="Register">Register</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Admin" asp-action="Blog">BLOG </a>
+                                            <ul class="sub-menu-style">
+                                                <li><a asp-controller="Admin" asp-action="Blog_Detalis">Blog_Detalis</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a asp-controller="Admin" asp-action="Contact">CONTACT </a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3">
+                            <div class="header-action header-action-flex header-action-mrg-right">
+                                <div class="same-style-2 header-search-1">
+                                    <a class="search-toggle" href="#">
+                                        <i class="icon-magnifier s-open"></i>
+                                        <i class="icon_close s-close"></i>
+                                    </a>
+                                    <div class="search-wrap-1">
+                                        <form action="#">
+                                            <input placeholder="Search products…" type="text">
+                                            <button class="button-search"><i class="icon-magnifier"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="same-style-2">
+                                    <a asp-controller="Admin" asp-action="Login"><i class="icon-user"></i></a>
+                                </div>
+                                <div class="same-style-2">
+                                    <a asp-controller="Admin" asp-action="Wish_List"><i class="icon-heart"></i><span class="pro-count red">03</span></a>
+                                </div>
+                                <div class="same-style-2 header-cart">
+                                    <a class="cart-active" asp-controller="Admin" asp-action="Cart">
+                                        <i class="icon-basket-loaded"></i><span class="pro-count red">02</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-small-device small-device-ptb-1">
+                <div class="row align-items-center">
+                    <div class="col-5">
+                        <div class="mobile-logo">
+                            <a asp-controller="Admin" asp-action="Index">
+                                <img alt="" src="~/Assets1/images/logo/logo.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="header-action header-action-flex">
+                            <div class="same-style-2">
+                                <a asp-controller="Admin" asp-action="Login"><i class="icon-user"></i></a>
+                            </div>
+                            <div class="same-style-2">
+                                <a asp-controller="Admin" asp-action="Wish_List"><i class="icon-heart"></i><span class="pro-count red">03</span></a>
+                            </div>
+                            <div class="same-style-2 header-cart">
+                                <a class="cart-active" asp-controller="Admin" asp-action="Checkout">
+                                    <i class="icon-basket-loaded"></i><span class="pro-count red">02</span>
+                                </a>
+                            </div>
+                            <div class="same-style-2 main-menu-icon">
+                                <a class="mobile-header-button-active" href="Assets1#"><i class="icon-menu"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+  
+            @RenderBody()
+        
+   
+
+    <footer class="footer-area bg-gray pb-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact-info-wrap">
+                        <div class="footer-logo">
+                            <a asp-controller="Admin" asp-action="Wish_List"><img src="~/Assets/images/logo/logo.png" alt="logo"></a>
+                        </div>
+                        <div class="single-contact-info">
+                            <span>Our Location</span>
+                            <p>869 General Village Apt. 645, Moorebury, USA</p>
+                        </div>
+                        <div class="single-contact-info">
+                            <span>24/7 hotline:</span>
+                            <p>09078601</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-right-wrap">
+                        <div class="footer-menu">
+                            <nav>
+                                <ul>
+                                    <li><a asp-controller="Admin" asp-action="Index">Home</a></li>
+                                    <li><a asp-controller="Admin" asp-action="Shop">Shop</a></li>
+                                    <li><a asp-controller="Admin" asp-action="About_Us">About Us </a></li>
+                                    <li><a asp-controller="Admin" asp-action="Contact">Contact</a></li>
+                                    <li><a asp-controller="Admin" asp-action="Blog">Blog.</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="social-style-2 social-style-2-mrg">
+                            <a href="aapke_tweet"><i class="icon-social-twitter"></i></a>
+                            <a href="musab.tariq.758"><i class="icon-social-facebook"></i></a>
+                            <a href="musab.tariq.758"><i class="icon-social-instagram"></i></a>
+                           
+                        </div>
+                        <div class=" Purchase copyrights">
+                            <p>Create BY MUSAB © 2023<a href="musab.tariq.758">Built with <span>Norda</span> Owner MUSAB</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/Assets1/js/vendor/vendor.min.js"></script>
+    <script src="~/Assets1/js/plugins/plugins.min.js"></script>
+    <script src="~/Assets1/js/main.js"></script>
+    <script src="~/Assets1/js/jquery.min.js"></script>
+    <script src="~/Assets1/js/bootstrap.min.js"></script>
+    <script src="~/Assets1/js/materialize.min.js"></script>
+    <script src="~/Assets1/js/custom.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,1128 @@
+﻿
+@{
+    ViewData["Title"] = "Shop";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="mobile-header-active mobile-header-wrapper-style">
+    <div class="clickalbe-sidebar-wrap">
+        <a class="sidebar-close"><i class="icon_close"></i></a>
+        <div class="mobile-header-content-area">
+            <div class="header-offer-wrap mobile-header-padding-border-4">
+                <p><i class="icon-paper-plane"></i> FREE SHIPPING world wide for all orders over <span>$199</span></p>
+            </div>
+            <div class="mobile-search mobile-header-padding-border-1">
+                <form class="search-form" action="#">
+                    <input type="text" placeholder="Search here…">
+                    <button class="button-search"><i class="icon-magnifier"></i></button>
+                </form>
+            </div>
+
+            <div class="mobile-header-info-wrap mobile-header-padding-border-3">
+                <div class="single-mobile-header-info">
+                    <a asp-controller="Home" asp-action="Product_Detalis"order-tracking.html"><i class="lastudioicon-pin-3-2"></i> Track Your Order </a>
+                </div>
+                <div class="single-mobile-header-info">
+                    <a class="mobile-language-active" asp-controller="Home" asp-action="Product_Detalis"#">English</a>
+
+                </div>
+                <div class="single-mobile-header-info">
+                    <a class="mobile-currency-active" asp-controller="Home" asp-action="Product_Detalis"#">Currency <span><i class="icon-arrow-down"></i></span></a>
+                    <div class="lang-curr-dropdown curr-dropdown-active">
+                        <ul>
+                            <li><a asp-controller="Home" asp-action="Product_Detalis"#">USD</a></li>
+                            <li><a asp-controller="Home" asp-action="Product_Detalis"#">EUR</a></li>
+                            <li><a asp-controller="Home" asp-action="Product_Detalis"#">Real</a></li>
+                            <li><a asp-controller="Home" asp-action="Product_Detalis"#">BDT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-contact-info mobile-header-padding-border-4">
+                <ul>
+                    <li><i class="icon-phone "></i> (+612) 2531 5600</li>
+                    <li><i class="icon-envelope-open "></i> norda@domain.com</li>
+                    <li><i class="icon-home"></i> PO Box 1622 Colins Street West Australia</li>
+                </ul>
+            </div>
+            <div class="mobile-social-icon">
+                <a asp-controller="Home" asp-action="Product_Detalis"aapke_tweet"><i class="icon-social-twitter"></i></a>
+                <a asp-controller="Home" asp-action="Product_Detalis"musab.tariq.758"><i class="icon-social-facebook"></i></a>
+                <a asp-controller="Home" asp-action="Product_Detalis"musab.tariq.758"><i class="icon-social-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- mini cart start -->
+<div class="sidebar-cart-active">
+    <div class="sidebar-cart-all">
+        <a class="cart-close" asp-controller="Home" asp-action="Product_Detalis"#"><i class="icon_close"></i></a>
+        <div class="cart-content">
+            <h3>Shopping Cart</h3>
+            <ul>
+                <li class="single-product-cart">
+                    <div class="cart-img">
+                        <a asp-controller="Home" asp-action="Product_Detalis"#"><img src="~/Assets/images/cart/cart-1.jpg" alt=""></a>
+    F                </div>
+                    <div class="cart-title">
+                        <h4><a asp-controller="Home" asp-action="Product_Detalis"#">Simple Black T-Shirt</a></h4>
+                        <span> 1 × $49.00	</span>
+                    </div>
+                    <div class="cart-delete">
+                        <a asp-controller="Home" asp-action="Product_Detalis"#">×</a>
+                    </div>
+                </li>
+                <li class="single-product-cart">
+                    <div class="cart-img">
+                        <a asp-controller="Home" asp-action="Product_Detalis"#"><img src="~/Assets/images/cart/cart-2.jpg" alt=""></a>
+                    </div>
+                    <div class="cart-title">
+                        <h4><a asp-controller="Home" asp-action="Product_Detalis"#">Norda Backpack</a></h4>
+                        <span> 1 × $49.00	</span>
+                    </div>
+                    <div class="cart-delete">
+                        <a asp-controller="Home" asp-action="Product_Detalis"#">×</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="cart-total">
+                <h4>Subtotal: <span>$170.00</span></h4>
+            </div>
+            <div class="cart-checkout-btn">
+                <a class="btn-hover cart-btn-style" asp-controller="Home" asp-action="Cart">view cart</a>
+                <a class="no-mrg btn-hover cart-btn-style" asp-controller="Home" asp-action="Checkout">checkout</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="breadcrumb-area bg-gray">
+    <div class="container">
+        <div class="breadcrumb-content text-center">
+            <ul>
+                <li>
+                    <a asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="active">Shop</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="shop-area pt-120 pb-120">
+    <div class="container">
+        <div class="row flex-row-reverse">
+            <div class="col-lg-9">
+                <div class="shop-topbar-wrapper">
+                    <div class="shop-topbar-left">
+                        <div class="view-mode nav">
+                            <a class="active" asp-controller="Home" asp-action="Product_Detalis"#shop-1" data-toggle="tab"><i class="icon-grid"></i></a>
+                            <a asp-controller="Home" asp-action="Product_Detalis"#shop-2" data-toggle="tab"><i class="icon-menu"></i></a>
+                        </div>
+                        <p>Showing 1 - 20 of 30 results </p>
+                    </div>
+                    <div class="product-sorting-wrapper">
+                        <div class="product-shorting shorting-style">
+                            <label>View :</label>
+                            <select>
+                                <option value=""> 20</option>
+                                <option value=""> 23</option>
+                                <option value=""> 30</option>
+                            </select>
+                        </div>
+                        <div class="product-show shorting-style">
+                            <label>Sort by :</label>
+                            <select>
+                                <option value="">Default</option>
+                                <option value=""> Name</option>
+                                <option value=""> price</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-bottom-area">
+                    <div class="tab-content jump">
+                        <div id="shop-1" class="tab-pane active">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="single-product-wrap mb-35">
+                                        <div class="product-img product-img-zoom mb-15">
+                                            <a asp-controller="Home" asp-action="Product_Detalis">
+                                                <img src="~/Assets//images/product/product-13.jpg" alt="">
+                                            </a>
+                                            <div class="product-action-2 tooltip-style-2">
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(2)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Basic Joggin Shorts</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$20.50</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 product-content-position text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(2)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Basic Joggin Shorts</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$20.50</span>
+                                            </div>
+                                            <div class="pro-add-to-cart">
+                                                <button title="Add to Cart">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="single-product-wrap mb-35">
+                                        <div class="product-img product-img-zoom mb-15">
+                                            <a asp-controller="Home" asp-action="Product_Detalis">
+                                                <img src="~/Assets//images/product/product-14.jpg" alt="">
+                                            </a>
+                                            <span class="pro-badge left bg-red">-20%</span>
+                                            <div class="product-action-2 tooltip-style-2">
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                </div>
+                                                <span>(5)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Make Thing Happen T-Shirt</a></h3>
+                                            <div class="product-price-2">
+                                                <span class="new-price">$35.45</span>
+                                                <span class="old-price">$45.80</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 product-content-position text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                </div>
+                                                <span>(5)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Make Thing Happen T-Shirt</a></h3>
+                                            <div class="product-price-2">
+                                                <span class="new-price">$35.45</span>
+                                                <span class="old-price">$45.80</span>
+                                            </div>
+                                            <div class="pro-add-to-cart">
+                                                <button title="Add to Cart">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="single-product-wrap mb-35">
+                                        <div class="product-img product-img-zoom mb-15">
+                                            <a asp-controller="Home" asp-action="Product_Detalis">
+                                                <img src="~/Assets/images/product/product-15.jpg" alt="">
+                                            </a>
+                                            <div class="product-action-2 tooltip-style-2">
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                </div>
+                                                <span>(4)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Basic White Simple Sneaker</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$35.45</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 product-content-position text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                </div>
+                                                <span>(4)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Basic White Simple Sneaker</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$35.45</span>
+                                            </div>
+                                            <div class="pro-add-to-cart">
+                                                <button title="Add to Cart">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="single-product-wrap mb-35">
+                                        <div class="product-img product-img-zoom mb-15">
+                                            <a asp-controller="Home" asp-action="Product_Detalis">
+                                                <img src="~/Assets//images/product/product-16.jpg" alt="">
+                                            </a>
+                                            <div class="product-action-2 tooltip-style-2">
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(3)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Simple Rounded Sunglasses</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$45.50</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 product-content-position text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(3)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Simple Rounded Sunglasses</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$45.50</span>
+                                            </div>
+                                            <div class="pro-add-to-cart">
+                                                <button title="Add to Cart">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="single-product-wrap mb-35">
+                                        <div class="product-img product-img-zoom mb-15">
+                                            <a asp-controller="Home" asp-action="Product_Detalis">
+                                                <img src="~/Assets//images/product/product-17.jpg" alt="">
+                                            </a>
+                                            <span class="pro-badge left bg-red">-20%</span>
+                                            <div class="product-action-2 tooltip-style-2">
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(5)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Vintage Socks X3</a></h3>
+                                            <div class="product-price-2">
+                                                <span class="new-price">$35.45</span>
+                                                <span class="old-price">$45.80</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 product-content-position text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(5)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Vintage Socks X3</a></h3>
+                                            <div class="product-price-2">
+                                                <span class="new-price">$35.45</span>
+                                                <span class="old-price">$45.80</span>
+                                            </div>
+                                            <div class="pro-add-to-cart">
+                                                <button title="Add to Cart">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="single-product-wrap mb-35">
+                                        <div class="product-img product-img-zoom mb-15">
+                                            <a asp-controller="Home" asp-action="Product_Detalis">
+                                                <img src="~/Assets//images/product/product-18.jpg" alt="">
+                                            </a>
+                                            <div class="product-action-2 tooltip-style-2">
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(3)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Tie-up Sute Sandals</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$55.50</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 product-content-position text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(3)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Tie-up Sute Sandals</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$55.50</span>
+                                            </div>
+                                            <div class="pro-add-to-cart">
+                                                <button title="Add to Cart">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="single-product-wrap mb-35">
+                                        <div class="product-img product-img-zoom mb-15">
+                                            <a asp-controller="Home" asp-action="Product_Detalis">
+                                                <img src="~/Assets//images/product/product-19.jpg" alt="">
+                                            </a>
+                                            <div class="product-action-2 tooltip-style-2">
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                </div>
+                                                <span>(5)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Faded Grey T-Shirt</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$65.50</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 product-content-position text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                </div>
+                                                <span>(5)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Faded Grey T-Shirt</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$65.50</span>
+                                            </div>
+                                            <div class="pro-add-to-cart">
+                                                <button title="Add to Cart">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="single-product-wrap mb-35">
+                                        <div class="product-img product-img-zoom mb-15">
+                                            <a asp-controller="Home" asp-action="Product_Detalis">
+                                                <img src="~/Assets//images/product/product-20.jpg" alt="">
+                                            </a>
+                                            <div class="product-action-2 tooltip-style-2">
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(2)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Snakeskin print belt</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$75.50</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 product-content-position text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(2)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Snakeskin print belt</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$75.50</span>
+                                            </div>
+                                            <div class="pro-add-to-cart">
+                                                <button title="Add to Cart">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="single-product-wrap mb-35">
+                                        <div class="product-img product-img-zoom mb-15">
+                                            <a asp-controller="Home" asp-action="Product_Detalis">
+                                                <img src="~/Assets//images/product/product-95.jpg" alt="">
+                                            </a>
+                                            <div class="product-action-2 tooltip-style-2">
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(2)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Simple Black T-Shirt</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$20.50</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 product-content-position text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(2)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis">Simple Black T-Shirt</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$20.50</span>
+                                            </div>
+                                            <div class="pro-add-to-cart">
+                                                <button title="Add to Cart">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="single-product-wrap mb-35">
+                                        <div class="product-img product-img-zoom mb-15">
+                                            <a asp-controller="Home" asp-action="Product_Detalis">
+                                                <img src="~/Assets//images/product/product-96.jpg" alt="">
+                                            </a>
+                                            <span class="pro-badge left bg-red">-20%</span>
+                                            <div class="product-action-2 tooltip-style-2">
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                </div>
+                                                <span>(5)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Norda Simple Backpack</a></h3>
+                                            <div class="product-price-2">
+                                                <span class="new-price">$35.45</span>
+                                                <span class="old-price">$45.80</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 product-content-position text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                </div>
+                                                <span>(5)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Norda Simple Backpack</a></h3>
+                                            <div class="product-price-2">
+                                                <span class="new-price">$35.45</span>
+                                                <span class="old-price">$45.80</span>
+                                            </div>
+                                            <div class="pro-add-to-cart">
+                                                <button title="Add to Cart">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="single-product-wrap mb-35">
+                                        <div class="product-img product-img-zoom mb-15">
+                                            <a asp-controller="Home" asp-action="Product_Detalis"product-details.html">
+                                                <img src="~/Assets//images/product/product-97.jpg" alt="">
+                                            </a>
+                                            <div class="product-action-2 tooltip-style-2">
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                </div>
+                                                <span>(4)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Simple Blue T-Shirt</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$35.45</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 product-content-position text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                </div>
+                                                <span>(4)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Simple Blue T-Shirt</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$35.45</span>
+                                            </div>
+                                            <div class="pro-add-to-cart">
+                                                <button title="Add to Cart">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="single-product-wrap mb-35">
+                                        <div class="product-img product-img-zoom mb-15">
+                                            <a asp-controller="Home" asp-action="Product_Detalis"product-details.html">
+                                                <img src="~/Assets//images/product/product-99.jpg" alt="">
+                                            </a>
+                                            <div class="product-action-2 tooltip-style-2">
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(3)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Basic Sneaker</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$45.50</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap-2 product-content-position text-center">
+                                            <div class="product-rating-wrap">
+                                                <div class="product-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(3)</span>
+                                            </div>
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Basic Sneaker</a></h3>
+                                            <div class="product-price-2">
+                                                <span>$45.50</span>
+                                            </div>
+                                            <div class="pro-add-to-cart">
+                                                <button title="Add to Cart">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="shop-2" class="tab-pane">
+                            <div class="shop-list-wrap mb-30">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6">
+                                        <div class="product-list-img">
+                                            <a asp-controller="Home" asp-action="Product_Detalis"product-details.html">
+                                                <img src="~/Assets//images/product/product-13.jpg" alt="Product Style">
+                                            </a>
+                                            <div class="product-list-quickview">
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-7 col-md-6 col-sm-6">
+                                        <div class="shop-list-content">
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Basic Joggin Shorts</a></h3>
+                                            <div class="pro-list-price">
+                                                <span class="new-price">$35.45</span>
+                                                <span class="old-price">$45.80</span>
+                                            </div>
+                                            <div class="product-list-rating-wrap">
+                                                <div class="product-list-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(3)</span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor labor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <div class="product-list-action">
+                                                <button title="Add To Cart"><i class="icon-basket-loaded"></i></button>
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-list-wrap mb-30">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6">
+                                        <div class="product-list-img">
+                                            <a asp-controller="Home" asp-action="Product_Detalis"product-details.html">
+                                                <img src="~/Assets//images/product/product-14.jpg" alt="Product Style">
+                                            </a>
+                                            <div class="product-list-quickview">
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-7 col-md-6 col-sm-6">
+                                        <div class="shop-list-content">
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Make Thing Happen T-Shirt</a></h3>
+                                            <div class="pro-list-price">
+                                                <span class="new-price">$35.45</span>
+                                                <span class="old-price">$45.80</span>
+                                            </div>
+                                            <div class="product-list-rating-wrap">
+                                                <div class="product-list-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(3)</span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor labor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <div class="product-list-action">
+                                                <button title="Add To Cart"><i class="icon-basket-loaded"></i></button>
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-list-wrap mb-30">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6">
+                                        <div class="product-list-img">
+                                            <a asp-controller="Home" asp-action="Product_Detalis"product-details.html">
+                                                <img src="~/Assets//images/product/product-15.jpg" alt="Product Style">
+                                            </a>
+                                            <div class="product-list-quickview">
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-7 col-md-6 col-sm-6">
+                                        <div class="shop-list-content">
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Basic White Simple Sneaker</a></h3>
+                                            <div class="pro-list-price">
+                                                <span class="new-price">$35.45</span>
+                                                <span class="old-price">$45.80</span>
+                                            </div>
+                                            <div class="product-list-rating-wrap">
+                                                <div class="product-list-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(3)</span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor labor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <div class="product-list-action">
+                                                <button title="Add To Cart"><i class="icon-basket-loaded"></i></button>
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-list-wrap mb-30">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6">
+                                        <div class="product-list-img">
+                                            <a asp-controller="Home" asp-action="Product_Detalis"product-details.html">
+                                                <img src="~/Assets//images/product/product-16.jpg" alt="Product Style">
+                                            </a>
+                                            <div class="product-list-quickview">
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-7 col-md-6 col-sm-6">
+                                        <div class="shop-list-content">
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Simple Rounded Sunglasses</a></h3>
+                                            <div class="pro-list-price">
+                                                <span class="new-price">$35.45</span>
+                                                <span class="old-price">$45.80</span>
+                                            </div>
+                                            <div class="product-list-rating-wrap">
+                                                <div class="product-list-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(3)</span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor labor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <div class="product-list-action">
+                                                <button title="Add To Cart"><i class="icon-basket-loaded"></i></button>
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-list-wrap mb-30">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6">
+                                        <div class="product-list-img">
+                                            <a asp-controller="Home" asp-action="Product_Detalis"product-details.html">
+                                                <img src="~/Assets//images/product/product-17.jpg" alt="Product Style">
+                                            </a>
+                                            <div class="product-list-quickview">
+                                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-7 col-md-6 col-sm-6">
+                                        <div class="shop-list-content">
+                                            <h3><a asp-controller="Home" asp-action="Product_Detalis"product-details.html">Vintage Socks X3</a></h3>
+                                            <div class="pro-list-price">
+                                                <span class="new-price">$35.45</span>
+                                                <span class="old-price">$45.80</span>
+                                            </div>
+                                            <div class="product-list-rating-wrap">
+                                                <div class="product-list-rating">
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star"></i>
+                                                    <i class="icon_star gray"></i>
+                                                    <i class="icon_star gray"></i>
+                                                </div>
+                                                <span>(3)</span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor labor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <div class="product-list-action">
+                                                <button title="Add To Cart"><i class="icon-basket-loaded"></i></button>
+                                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                                                <button title="Compare"><i class="icon-refresh"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-pagination-style text-center mt-10">
+                        <ul>
+                            <li><a class="prev" asp-controller="Home" asp-action="Product_Detalis"#"><i class="icon-arrow-left"></i></a></li>
+                            <li><a class="active" asp-controller="Home" asp-action="Product_Detalis"#">1</a></li>
+                            <li><a asp-controller="Home" asp-action="Product_Detalis"#">2</a></li>
+                            <li><a class="next" asp-controller="Home" asp-action="Product_Detalis"#"><i class="icon-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="sidebar-wrapper sidebar-wrapper-mrg-right">
+                    <div class="sidebar-widget mb-40">
+                        <h4 class="sidebar-widget-title">Search </h4>
+                        <div class="sidebar-search">
+                            <form class="sidebar-search-form" action="#">
+                                <input type="text" placeholder="Search here...">
+                                <button>
+                                    <i class="icon-magnifier"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="sidebar-widget shop-sidebar-border mb-35 pt-40">
+                        <h4 class="sidebar-widget-title">Categories </h4>
+                        <div class="shop-catigory">
+                            <ul>
+                                <li><a asp-controller="Home" asp-action="Product_Detalis"shop.html">T-Shirt</a></li>
+                                <li><a asp-controller="Home" asp-action="Product_Detalis"shop.html">Shoes</a></li>
+                                <li><a asp-controller="Home" asp-action="Product_Detalis"shop.html">Clothing </a></li>
+                                <li><a asp-controller="Home" asp-action="Product_Detalis"shop.html">Women </a></li>
+                                <li><a asp-controller="Home" asp-action="Product_Detalis"shop.html">Baby Boy </a></li>
+                                <li><a asp-controller="Home" asp-action="Product_Detalis"shop.html">Accessories </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar-widget shop-sidebar-border mb-40 pt-40">
+                        <h4 class="sidebar-widget-title">Price Filter </h4>
+                        <div class="price-filter">
+                            <span>Range:  $100.00 - 1.300.00 </span>
+                            <div id="slider-range"></div>
+                            <div class="price-slider-amount">
+                                <div class="label-input">
+                                    <input type="text" id="amount" name="price" placeholder="Add Your Price" />
+                                </div>
+                                <button type="button">Filter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-widget shop-sidebar-border mb-40 pt-40">
+                        <h4 class="sidebar-widget-title">Refine By </h4>
+                        <div class="sidebar-widget-list">
+                            <ul>
+                                <li>
+                                    <div class="sidebar-widget-list-left">
+                                        <input type="checkbox"> <a asp-controller="Home" asp-action="Product_Detalis"#">On Sale <span>4</span> </a>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sidebar-widget-list-left">
+                                        <input type="checkbox" value=""> <a asp-controller="Home" asp-action="Product_Detalis"#">New <span>5</span></a>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sidebar-widget-list-left">
+                                        <input type="checkbox" value=""> <a asp-controller="Home" asp-action="Product_Detalis"#">In Stock <span>6</span> </a>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar-widget shop-sidebar-border mb-40 pt-40">
+                        <h4 class="sidebar-widget-title">Size </h4>
+                        <div class="sidebar-widget-list">
+                            <ul>
+                                <li>
+                                    <div class="sidebar-widget-list-left">
+                                        <input type="checkbox" value=""> <a asp-controller="Home" asp-action="Product_Detalis"#">XL <span>4</span> </a>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sidebar-widget-list-left">
+                                        <input type="checkbox" value=""> <a asp-controller="Home" asp-action="Product_Detalis"#">L <span>5</span> </a>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sidebar-widget-list-left">
+                                        <input type="checkbox" value=""> <a asp-controller="Home" asp-action="Product_Detalis"#">SM <span>6</span> </a>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sidebar-widget-list-left">
+                                        <input type="checkbox" value=""> <a asp-controller="Home" asp-action="Product_Detalis"#">XXL <span>7</span> </a>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar-widget shop-sidebar-border mb-40 pt-40">
+                        <h4 class="sidebar-widget-title">Color </h4>
+                        <div class="sidebar-widget-list">
+                            <ul>
+                                <li>
+                                    <div class="sidebar-widget-list-left">
+                                        <input type="checkbox" value=""> <a asp-controller="Home" asp-action="Product_Detalis"#">Green <span>7</span> </a>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sidebar-widget-list-left">
+                                        <input type="checkbox" value=""> <a asp-controller="Home" asp-action="Product_Detalis"#">Cream <span>8</span> </a>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sidebar-widget-list-left">
+                                        <input type="checkbox" value=""> <a asp-controller="Home" asp-action="Product_Detalis"#">Blue <span>9</span> </a>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sidebar-widget-list-left">
+                                        <input type="checkbox" value=""> <a asp-controller="Home" asp-action="Product_Detalis"#">Black <span>3</span> </a>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar-widget shop-sidebar-border pt-40">
+                        <h4 class="sidebar-widget-title">Popular Tags</h4>
+                        <div class="tag-wrap sidebar-widget-tag">
+                            <a asp-controller="Home" asp-action="Product_Detalis"#">Clothing</a>
+                            <a asp-controller="Home" asp-action="Product_Detalis"#">Accessories</a>
+                            <a asp-controller="Home" asp-action="Product_Detalis"#">For Men</a>
+                            <a asp-controller="Home" asp-action="Product_Detalis"#">Women</a>
+                            <a asp-controller="Home" asp-action="Product_Detalis"#">Fashion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="subscribe-area bg-gray pt-115 pb-115">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5">
+                <div class="section-title">
+                    <h2>keep connected</h2>
+                    <p>Get updates by subscribe our weekly newsletter</p>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7">
+                <div id="mc_embed_signup" class="subscribe-form">
+                    <form id="mc-embedded-subscribe-form" class="validate subscribe-form-style" novalidate="" target="_blank" name="mc-embedded-subscribe-form" method="post" action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef">
+                        <div id="mc_embed_signup_scroll" class="mc-form">
+                            <input class="email" type="email" required="" placeholder="Enter your email address" name="EMAIL" value="">
+                            <div class="mc-news" aria-hidden="true">
+                                <input type="text" value="" tabindex="-1" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef">
+                            </div>
+                            <div class="clear">
+                                <input id="mc-embedded-subscribe" class="button" type="submit" name="subscribe" value="Subscribe">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
